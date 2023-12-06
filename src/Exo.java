@@ -15,7 +15,7 @@ public class Exo {
         Scanner langue = new Scanner(System.in);
         String lang = langue.nextLine();
         System.out.println("Vous avez choisi de parler " + lang);
-        if (lang.contentEquals("Français")) {
+        if (lang.contentEquals("Français") || lang.contentEquals("français") || lang.contentEquals("francais")) {
             if (hour < 12) {
                 System.out.println("Bonjour");
             } else {
@@ -34,7 +34,7 @@ public class Exo {
             } else {
                 System.out.println("Bonne soirée");
             }
-        } else if (lang.contentEquals("Anglais")){
+        } else if (lang.contentEquals("Anglais") || lang.contentEquals("anglais")) {
             if (hour < 12) {
                 System.out.println("Hello");
             } else {
