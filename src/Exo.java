@@ -24,7 +24,7 @@ public class Exo {
 
             Scanner input = new Scanner(System.in);
             String str = input.nextLine();
-
+            System.out.println(str);
             if (str.contentEquals(new StringBuilder(str).reverse())) {
                 System.out.println("Bien dit !");
             }
@@ -34,7 +34,7 @@ public class Exo {
             } else {
                 System.out.println("Bonne soirée");
             }
-        } else {
+        } else if (lang.contentEquals("Anglais")){
             if (hour < 12) {
                 System.out.println("Hello");
             } else {
@@ -43,7 +43,7 @@ public class Exo {
 
             Scanner input = new Scanner(System.in);
             String str = input.nextLine();
-
+            System.out.println(str);
             if (str.contentEquals(new StringBuilder(str).reverse())) {
                 System.out.println("Well said !");
             }
@@ -54,7 +54,8 @@ public class Exo {
                 System.out.println("Bye !");
             }
         }
-
-
+        else {
+            System.out.println("Je ne parle pas cette langue");
+        }
     }
 }
