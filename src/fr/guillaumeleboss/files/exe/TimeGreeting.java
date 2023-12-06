@@ -1,3 +1,5 @@
+package fr.guillaumeleboss.files.exe;
+
 import org.joda.time.DateTime;
 
 import java.util.Scanner;
@@ -28,7 +30,8 @@ public class TimeGreeting {
 
     private void interact() {
         String input = scanner.nextLine();
-        System.out.println(input);
+        StringBuilder inputBuilder = new StringBuilder(input);
+        System.out.println(inputBuilder.reverse());
         if (input.equals(new StringBuilder(input).reverse().toString())) {
             System.out.println(isMorning() ? "Bien dit !" : "Well said !");
         }

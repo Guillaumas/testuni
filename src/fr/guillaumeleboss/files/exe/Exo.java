@@ -1,3 +1,5 @@
+package fr.guillaumeleboss.files.exe;
+
 import java.util.Scanner;
 
 public class Exo {
